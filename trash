@@ -1,0 +1,18 @@
+'''
+# Read a PIL image
+image = Image.open('C:/Users/User/generate-dataset/Assets/Snapshots/snap_256x256_2023-07-09_21-09-04.png')
+
+# Define a transform to convert PIL
+# image to a Torch tensor
+transform = transforms.Compose(
+    [
+        transforms.PILToTensor()
+    ])
+
+# transform = transforms.PILToTensor()
+# Convert the PIL image to Torch tensor
+img_tensor = transform(image)
+
+# print the converted Torch tensor
+print(img_tensor)
+'''
